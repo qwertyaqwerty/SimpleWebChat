@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script src="firebase.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<!-- CHAT MARKUP -->
+<div id="login-container">
+    <header>Welcome to online Chat!</header>
+    <label for="nameInput">Username:</label>
+    <input type='text' id='nameInput' placeholder='Press Enter to login...'>
+    <footer id="server-connection">
+      <label for="server-progress">Verifying username...</label>
+      <progress id="server-progress"></progress>
+    </footer>
+</div>
+
+<div class="example-chat l-demo-container" id="chat-container">
+  <header id="chat-header">Chat</header>
+
+  <ul id='messages' class="chat-messages"></ul>
+   <div class='sidebar' id='online-users-container'>
+      <header id="online-users-header">Online users</header>
+     <ul id='online-users'></ul>
+   </div>
+
+  <footer>
+    <textarea cols="5" type='text' id='messageInput' placeholder='Type a message, press Enter to send...'></textarea>
+  </footer>
+
+</div>
+
+<!-- CHAT JAVACRIPT -->
+<script src='main.js'></script>
+</body>
+</html>
